@@ -343,8 +343,16 @@
     filter: invert(50%) !important; 
 }
 
-
-
+.filter_white {
+    filter: grayscale(1) brightness(0) invert(1) !important;
+}
+.filter_black {
+    filter: grayscale(1) brightness(0) contrast(1) !important;
+}
+.filter_golden {
+    filter: sepia(95%) saturate(120%) hue-rotate(18deg) brightness(0.88) contrast(1.05) !important;
+    -webkit-filter: sepia(95%) saturate(120%) hue-rotate(18deg) brightness(0.88) contrast(1.05) !important;
+}
 /* Filtro de opacidad */
 .filter_opacity_10 { 
     filter: opacity(10%) !important; 
