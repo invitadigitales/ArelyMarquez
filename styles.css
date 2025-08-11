@@ -372,29 +372,79 @@ body {
 
 
 
-/* ===========================================
-   RESPONSIVE DESIGN
-=========================================== */
-@media (min-width: 300px) {
 
+
+
+
+.timeline {
+    width: fit-content;
+    position: relative;
+    padding: 0;
 }
 
-@media (min-width: 350px) {
-
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #b8860b, #daa520);
 }
 
-@media (min-width: 430px) {
-
+.timeline_item {
+    position: relative;
+    padding-left: 70px;
+}
+.timeline_img {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background: #b8860b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
 }
 
-@media (min-width: 510px) {
-
+.timeline_time {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b8860b;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
 }
 
-@media (min-width: 630px) {
-
-
+.timeline_event {
+    font-size: 1.2rem;
+    color: #8b7355;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 770px) {
 
